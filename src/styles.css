@@ -10,7 +10,7 @@ header {
 
     display: flex;
     justify-content: space-between;
-    padding: 2% 3%;
+    padding: 1% 1%;
     align-items: center;
 }
 
@@ -21,7 +21,8 @@ header {
 .navbar li {
     display: inline-block;
     padding: 0px 25px;
-} 
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+}
 
 .navbar li:hover {
     transform: scale(1.2);
@@ -35,20 +36,74 @@ header {
 
 main {
     background-color: #ffffff;
+    
 }
 
 .content {
+    margin-top: 30px;
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
 }
 
 .content-subscription {
     justify-self: center;
 }
 
+.content-subscription h1 {
+    margin-bottom: -18px;
+    font-size: 40px;
+}
+
+.content-subscription-form input {
+    width: 18vw;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    padding: 10px; 
+    box-shadow: 0 3px 6px 0px #a7a7a7;
+    font-family: "Open Sans", sans-serif;
+    outline: none;
+}
+.content-subscription-form button {
+    width: 11vw;
+    margin-left: 8px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px; 
+    box-shadow: 0 2px 6px 0px #a7a7a7;
+
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+
+    background-color: #ffa500;
+    
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+}
+
+.content-subscription-form button:hover {
+    background-color: #e79702;
+}
+
+.content-subscription-form button:active {
+    transform: translateY(1px);
+}
+
 .content-picture {
     justify-self: center;
+}
+
+.content-picture img {
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
 }
 
 .content-button {
