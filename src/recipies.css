@@ -116,19 +116,17 @@ header {
 }
 
 .recipes {
-    padding-top: 220px;
+    padding-top: 300px;
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
+    
 }
 
 .recipes-table {
-    display: flex;
     text-align: center;
-    justify-content: center; 
-    padding-top: 80px;
 }
 
 table {
@@ -145,6 +143,30 @@ td {
     font-weight: bold;
 }
 
-tr:hover{
+td:hover{
     background-color: #ed964459;
+}
+
+.recipe-title {
+    font-size: 32px;
+    text-align: center;
+
+    color: #e79702;
+}
+
+.recipe-picture {
+    margin-top: 10px;
+    text-align: center;
+    padding-right: 30px;
+}
+
+#recipe-picture {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.recipe-instructions {
+    font-weight: bold;
 }
