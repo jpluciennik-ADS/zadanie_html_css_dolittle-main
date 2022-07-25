@@ -43,7 +43,7 @@ main {
     margin-top: 50px;
     display: grid;
     grid-auto-rows: 1fr;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
 }
@@ -102,8 +102,7 @@ main {
 .content-picture img {
     height: auto; 
     width: auto; 
-    max-width: 300px; 
-    max-height: 280px;
+    max-width: 420px;
 }
 
 .content-buttons {
@@ -146,6 +145,37 @@ main {
 
 .trending {
     background-color: #ffa500;
+}
+
+.trending-header {
+    align-items: center;
+    display: flex;
+    color: white;
+}
+
+.trending-header i {
+    margin-left: 50px;
+    margin-right: 25px;
+    font-size: 32px;
+}
+
+.trending-pictures {
+    display: flex;  
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+.trending-picture {
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.trending-picture:hover {
+    transform: scale(105%);
+    transition: 1.5s;
+    filter: brightness(70%);
 }
 
 footer {
