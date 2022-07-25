@@ -162,7 +162,7 @@ main {
 .trending-pictures {
     display: flex;  
     justify-content: space-around;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 
 .trending-picture {
@@ -179,5 +179,15 @@ main {
 }
 
 footer {
-    background-color: #008000;
+    background-color: #ffffff;
+    color: #514d4d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 10px 50px;
+    font-size: 16px;
+}
+
+.footer-icons {
+    font-size: 32px;
 }
